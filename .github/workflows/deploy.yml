@@ -22,6 +22,6 @@ jobs:
      - name: Deploy static site to S3 bucket
        run: aws s3 sync ./ s3://www.rodolfomori.com/missao-captura-v3/
 
-     - name: Invalidate cloudfront distribution and wait for completion
+     - name: Invalidate Cloudfront distribution and wait for completion
        run: aws cloudfront create-invalidation --distribution-id=${{ secrets.DISTRIBUTION_ID }} --paths /
     
