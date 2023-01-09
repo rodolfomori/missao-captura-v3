@@ -465,7 +465,7 @@ footer p:last-child {
     margin-bottom: 15px;
     color: black !important;
     cursor: pointer;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 #_form_35_ ._submit b{ 
@@ -583,4 +583,39 @@ input {
     border: none;
     font-family: 'Sora-Bold';
     margin-top: 20px;
+}
+
+.progress-bar {
+    height: 28px;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    max-width: 700px;    
+    margin: 15px auto;
+    border-radius: 3px;
+}
+
+.progress-bar::before {
+    content: "";
+    width: 62%;
+    background-color: #31C332;
+    border-radius: 3px;
+    animation-name: tamanhoProgressBar;
+    animation-duration: 1.5s;
+}
+
+.progress-bar p {
+    font-size: 12px;
+    margin-top: 6.5px;
+    margin-left: 15px;
+    font-family: 'Sora-Medium';
+    letter-spacing: 0.57px;
+    color: #000;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+#city {
+    color: #fb8000;
+    font-family: 'Sora-Medium';
 }
