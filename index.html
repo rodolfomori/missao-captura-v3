@@ -718,9 +718,13 @@
   fetch('https://extreme-ip-lookup.com/json/?key=0vCY0djWd0ZbLObXdPbv')
     .then(res => res.json())
     .then(response => {
-      if(response.city && response.city !== '' && response.city !== undefined && response.city !== null){
+      if (response.city && response.region
+        !== '' && response.region
+        !== undefined && response.region
+        !== null) {
         const city = document.getElementById("city")
-        city.innerHTML = response.city
+        city.innerHTML = response.region
+
       }
     })
     .catch((data, status) => {
